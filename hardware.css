@@ -1,0 +1,43 @@
+hardware.css{
+}
+.red-border {
+    border-color:red black blue black; 
+    border-width:4px;
+    border-style:solid;
+    border-radius:50px;
+}
+#background{
+    background-color:black
+    colorwhite;
+}   
+#motherboard{
+width:200px;
+height:200px;
+}
+.imgpart  {
+    display: inline-block;
+    width:35%;
+}
+.textpart {
+    display: inline-block;
+    width:65%;
+}
+.cpuimg  {
+    display: inline-block;
+    width:35%;
+}
+.cputext  {
+    display:inline-block;
+    width:35%;
+}
+#cpu  {
+    width:200px;
+    height:200px;
+}
+
+
+
+
+
+    
+
