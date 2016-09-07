@@ -1,17 +1,16 @@
-hardware.css{
-}
+
 .red-border {
-    border-color:red black blue black; 
-    border-width:4px;
-    border-style:solid;
-    border-radius:50px;
+    border-color:red; 
+    border-width:10px;
+    border-style:outset;
+    border-radius:0px;
 }
 #background{
-    background-color:black
-    colorwhite;
+    background-color:black;
+    color:white;
 }   
 #motherboard{
-width:200px;
+width:400px;
 height:200px;
 }
 .imgpart  {
@@ -21,6 +20,7 @@ height:200px;
 .textpart {
     display: inline-block;
     width:65%;
+    position: absolute;
 }
 .cpuimg  {
     display: inline-block;
@@ -29,15 +29,51 @@ height:200px;
 .cputext  {
     display:inline-block;
     width:35%;
+    position: absolute
 }
 #cpu  {
-    width:200px;
+    width:400px;
     height:200px;
 }
-
-
-
-
-
-    
-
+#ram  {
+    width:400px;
+    height:200px;
+}
+.ramimg  {
+    display:inline-block;
+    width:65%;
+}
+.ramtext  {
+    display:inline-block;
+    width:35%;
+    position: absolute
+}
+#harddrive  {
+    width:400px;
+    height:200px;
+}
+.harddriveimg  {
+    display: inline-block;
+    width:65%;
+}
+.harddrivetext  {
+    display: inline-block;
+    width:35%;
+}
+#allOfCpu{
+    display: inline;
+}
+/*#allofram{*/
+/*    display:inline;*/
+/*}*/
+/*#allofharddrive{*/
+/*    display:inline;*/
+/*}*/
+.harddrivetext{
+    position: absolute;
+    left:30%;
+}
+.ramtext{
+    position: absolute;
+    left: 30%;
+}
