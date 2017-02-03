@@ -1,0 +1,35 @@
+body{
+    background-color: lightblue;
+}
+    p:hover{
+        font-size: 25px;
+        color:white;
+    }
+h1{
+ font-size: 35px;
+ color:red;
+ Text-align:center; 
+ Border-bottom:solid;
+ Margin-left:450px;
+ Margin-right:450px;
+}
+h2{
+    font-size:30px;
+    color:red;
+    border-bottom:dotted;
+    text-align:center;
+    margin-left:400px;
+    margin-right: 400px;
+    border-bottom-color: white;
+}
+h3{
+    font-size: 27px;
+    color:red;
+    border-bottom:solid;
+}
+p{
+    font-size:20px;
+    color:black;
+    border-style: dotted;
+    Text-align:center; 
+}

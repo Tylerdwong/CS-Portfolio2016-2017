@@ -1,34 +1,82 @@
 <!DOCTYPE html>
 <html>
     <head>
-         <style>
-    #navbar {
-    background:Blue;
-    text-align:center;
-}
-
-#navbar li {
-    display:inline-block;
-    padding: 10px;
-    font-size: 15px;
-    border: 1px solid purple;
-    background-color: black;
-}
-.blue-border {
-    border-color:blue;
-    border-width:5px;
-    border-style:dashed;
-    border-radius:0px;
-}
-</style> 
 
          <link rel="stylesheet" href="Howto2.css" type="text/css" />
         <title></title>
-        <center>How to make a To do list</center>
+        <center class="title">How to make a To do list</center>
         <h1>Step 1-HTML</h1>
-        <p>My how to page needed javascript, html, and css in order to make it the best I can.  For the HTML on a to do list it is important that you want to see how you want to format your to do list to make it look the way you want it to look.  So what I did is that I added to style it the way I wanted the page to look with a dropdown button and a textbox to input my list of works, and even a submit button to make my to do list appear.  After this you want to create your options which are basically 4 of them to make the input that you put in the textbox have a special effect which in this case I have my list being underlined, green font, blue font, or a red border around the list.  In these options you want to make sure to id each of the options so later on you won't have to worry about not being organized.  You would also want to name your div which is very important part to work in with the javascript, in this case my div name is "outputarea."  </p>
+        <p class="paragraph1">My how to page needed javascript, html, and css in order to make it the best I can.  For the HTML on a to do list it is important that you want to see how you want to format your to do list to make it look the way you want it to look.  So what I did is that I added to style it the way I wanted the page to look with a dropdown button and a textbox to input my list of works, and even a submit button to make my to do list appear.  After this you want to create your options which are basically 4 of them to make the input that you put in the textbox have a special effect which in this case I have my list being underlined, green font, blue font, or a red border around the list.  In these options you want to make sure to id each of the options so later on you won't have to worry about not being organized.  You would also want to name your div which is very important part to work in with the javascript, in this case my div name is "outputarea."  Make sure all of this work is done in the body and lastly include your code to connect your html to your javascript so that it will operate in this case my javascript is named "todo.js".</p>
+     <textarea> &lt;body class=&quot;border&quot;&gt;
+        &lt;input type=&quot;text&quot; name=&quot;text1&quot; style=&quot;width:200px;&quot; id=&quot;text1&quot;&gt;
+        &lt;select id=&quot;dropdown&quot; style=&quot;border-radius: 7px;&quot;&gt;</textarea>
+      <textarea>&lt;option value=&quot;normal&quot;&gt;Normal&lt;/option&gt;
+    &lt;option value=&quot;redborder&quot;&gt;Red Border&lt;/option&gt;
+    &lt;option value=&quot;greenfont&quot;&gt;Green Font&lt;/option&gt;
+    &lt;option value=&quot;bluefont&quot;&gt;Blue Font&lt;/option&gt;
+    &lt;option value=&quot;underline&quot;&gt;Underlined&lt;/option&gt;</textarea>
+    <textarea>  &lt;input type=&quot;submit&quot; id=&quot;submitbutton&quot;&gt;
+
+        &lt;div class=&quot;border&quot; id=&quot;outputarea&quot;&gt;&lt;/div&gt;
+
+
+
+
+        &lt;script type=&quot;text/javascript&quot; src=&quot;todo.js&quot;&gt;&lt;/script&gt;</textarea>
+        <h2>Step 2-JavaScript</h2>
+        <p class="paragraph2">First you want to create your variables so that when you are coding you can make sure you have variables that are labeled and that will operate.  Under the variables you want to add a code that will make your submitbutton operate with the code "addEventListener."  In order to have your button output an answer you will have to use div + div + whatever you want to name your textbox where you put your input in.  Then you have to make sure that you have "if statements" in order to have your outputs operate work. In these "if" statements you need to label what type of special element you are going to use when you have your output shown.  It's also helpful to leave comments especially in your javascript so when you come back to it you will know what's going on and therefore be able to understand the sidenotes that are left there.  And lastly have a code to delete things off of your to do list, and in this case to delete what task you want to get rid of on your list you will just click it and it will be gone.</p>
+        <textarea>submitbutton.addEventListener(\"click\", buttonfunction);\r\n\r\n\r\nfunction buttonfunction() {\r\n\r\n  var task = \"<div>\" + text1.value + \"<div>\";\r\n\r\n\r\n  outputarea.innerHTML = outputarea.innerHTML + task;\r\n</textarea>
+        <textarea> if (dropdown.value == "underline") {
+    outputarea.innerHTML = text1.value;
+    outputarea.style.textDecoration = "underline";
+    text1.value = "";
+
+  }
+  else if (dropdown.value == "redborder") {
+    outputarea.innerHTML = text1.value;
+    outputarea.style.borderColor = "red";
+
+  }
+  else if (dropdown.value == "greenfont") {
+    outputarea.innerHTML = text1.value;
+    outputarea.style.color = "green";
+  }
+  else if (dropdown.value == "bluefont") {
+    outputarea.innerHTML = text1.value
+    outputarea.style.color = "blue";
+
+  }</textarea>
+        <textarea>outputarea.addEventListener(\"click\", function(evt) {\r\n  var name1 = evt.target;\r\n  name1.parentNode.removeChild(name1);</textarea>
+    <h3>Step 3-CSS</h3>
+    <p class="paragraph3">After you have finished all of your javascript and html and made sure that your to do list is working, you can now make your to do list look nice with css.  Some effects from css I used were as simple as making borders around text and just changing the color of the background just to make your website look nice and the best to your ability.</p>
+    <textarea class="csshelp">.paragraph1 {
+    border-color:gold;
+    border-width:4px;
+    border-style:solid;
+    border-radius:0px; 
+}
+
+.paragraph2 {
+    border-color:gold;
+    border-width:4px;
+    border-style:solid;
+    border-radius:0px;
+}    
+
+.paragraph3 {
+    border-color:gold;
+    border-width:4px;
+    border-style:solid;
+    border-radius:0px;
+}
+
+.title {
+    text-decoration:underline;
+    color:red;
+    font-size:200%;  
+}</textarea>   
     </head>
-    <body bgcolor="#000000" text= "aqua"> 
+    <body bgcolor="#000000" text= "white"> 
 
     </body>
 </html>

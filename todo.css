@@ -1,11 +1,6 @@
-.border {
-    background-color: white;
-    color: black;
-}
-
-div {
-    width: 320px;
-    padding: 10px;
-    border: 5px solid white;
-    margin: 0;
+.title {
+    border-color:black;
+    border-width:4px;
+    border-style:solid;
+    border-radius:0px;
 }

@@ -1,0 +1,31 @@
+.paragraph1 {
+    border-color:gold;
+    border-width:4px;
+    border-style:solid;
+    border-radius:0px; 
+}
+
+.paragraph2 {
+    border-color:gold;
+    border-width:4px;
+    border-style:solid;
+    border-radius:0px;
+}    
+
+.paragraph3 {
+    border-color:gold;
+    border-width:4px;
+    border-style:solid;
+    border-radius:0px;
+}
+
+.title {
+    text-decoration:underline;
+    color:red;
+    font-size:200%;  
+}
+
+.csshelp {
+    width:50%;
+    height:500%;
+}

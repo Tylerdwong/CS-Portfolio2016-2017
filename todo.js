@@ -38,7 +38,7 @@ function buttonfunction() {
     outputarea.style.color = "green";
   }
   else if (dropdown.value == "bluefont") {
-    outputarea.innerHTML = text1.value
+    outputarea.innerHTML = text1.value;
     outputarea.style.color = "blue";
 
   }
